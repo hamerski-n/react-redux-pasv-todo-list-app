@@ -1,0 +1,18 @@
+.form-control:disabled {
+    background-color: white;
+    border-style: none;
+}
+
+.green {
+    color: green;
+}
+
+.done  {
+    text-decoration: line-through;
+}
+
+.important {
+    font-weight: bold;
+    font-size: 150%;
+    color: darkorange;
+}
