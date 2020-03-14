@@ -25,9 +25,9 @@ export function todoImportant(todoId) {
     }
 }
 
-export function todoEdit(todoId) {
+export function todoEdit(args) {
     return (dispatch) => {
-        dispatch({type: 'TODO_EDIT', payload: todoId})
+        dispatch({type: 'TODO_EDIT', payload: args})
     }
 }
 

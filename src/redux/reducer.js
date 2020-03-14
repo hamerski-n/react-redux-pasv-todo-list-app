@@ -71,8 +71,8 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 todoList: [...state.todoList.map(el => {
-                    if (el.todoId === action.payload) {
-                        return {...el, isEdit: !el.isEdit}
+                    if (el.todoId === action.payload.id) {
+                        return {...el, isEdit: !el.isEdit, todoName: action.payload.name}
                     } else
                         return {...el}
                 })]

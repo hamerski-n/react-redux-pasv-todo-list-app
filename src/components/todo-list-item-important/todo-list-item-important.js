@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import './todo-list-item.css'
+import './todo-list-item-important.css'
 import {connect} from "react-redux";
 import {
     todoDone,
@@ -9,8 +9,9 @@ import {
     todoMoveUp,
     todoTaskConfirmDelete
 } from "../../redux/actions";
+import DeleteConfirmationModal from "../delete-confirmation-modal/delete-confirmation-modal";
 
-const TodoListItem = (props) => {
+const TodoListItemImportant = (props) => {
     const todo = props.todo;
     const [newName, setNewName] = useState(todo.todoName);
 
@@ -38,16 +39,6 @@ const TodoListItem = (props) => {
                             <i className={`text-success p-2 position-left far ${check}`}></i>
                         </div>
                         <div className='col-sm-0.5 btn-group-vertical btn-sm'>
-                            <button className='btn btn-secondary btn-sm'
-                                    disabled={todo.isDisabledButtonUp}
-                                    onClick={() => props.todoMoveUp(todo.todoId)}>
-                                <i className="fas fa-sort-up"></i>
-                            </button>
-                            <button className='btn btn-secondary btn-sm '
-                                    disabled={todo.isDisabledButtonDown}
-                                    onClick={() => props.todoMoveDown(todo.todoId)}>
-                                <i className="fas fa-sort-down"></i>
-                            </button>
                         </div>
                         <div className='col-sm-9 '>
                             {!todo.isEdit && <input type='text'
@@ -90,6 +81,7 @@ const TodoListItem = (props) => {
                     </div>
                 </div>
             </div>
+            <DeleteConfirmationModal/>
         </div>
     )
 };
@@ -107,4 +99,4 @@ const mapDispatchToProps = {
     todoMoveDown: todoMoveDown,
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(TodoListItem);
+export default connect(mapStateToProps, mapDispatchToProps)(TodoListItemImportant);
