@@ -14,7 +14,7 @@ const initialState = {
             todoName: 'todo 2',
             isDone: false,
             isEdit: false,
-            isImportant: false,
+            isImportant: true,
             isDisabledButtonUp: false,
             isDisabledButtonDown: false,
         },

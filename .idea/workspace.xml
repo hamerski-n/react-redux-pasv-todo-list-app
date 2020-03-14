@@ -2,38 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63c4f419-d144-47bf-a667-7c023603b0a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/app/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/app/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/delete-confirmation-modal/delete-confirmation-modal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/delete-confirmation-modal/delete-confirmation-modal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/delete-confirmation-modal/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todo-add-empty-task-modal/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todo-add-empty-task-modal/todo-add-empty-task-modal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todo-add-empty-task-modal/todo-add-empty-task-modal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todo-add/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todo-add/todo-add.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todo-add/todo-add.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todo-list-item/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todo-list-item/todo-list-item.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todo-list-item/todo-list-item.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todo-list/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todo-list/todo-list.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todo-list/todo-list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todo-load/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todo-load/todo-load.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todo-load/todo-load.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/important-tasks/important-tasks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/important-tasks/important-tasks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/important-tasks/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -87,7 +62,7 @@
       <recent name="C:\Users\Natalie\Desktop\PASV\aNorm\react-redux-pasv-todo-list-app\src\components\todo-list-item" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.npm start">
+  <component name="RunManager" selected="npm.deploy">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
@@ -139,7 +114,7 @@
       <option name="presentableId" value="Default" />
       <updated>1583904150764</updated>
       <workItem from="1583904152864" duration="6903000" />
-      <workItem from="1584052275897" duration="75898000" />
+      <workItem from="1584052275897" duration="79031000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1583904674945</created>
@@ -148,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583904674945</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="TodoList">
+      <created>1584172820933</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584172820933</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,17 +138,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="TodoList" />
+    <option name="LAST_COMMIT_MESSAGE" value="TodoList" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="5" key="#ESLint" timestamp="1584137861553">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="233" y="5" key="#ESLint/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1584137861553" />
-    <state x="230" y="0" key="CommitChangelistDialog2" timestamp="1584172786410">
+    <state x="230" y="0" key="CommitChangelistDialog2" timestamp="1584175887137">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="230" y="0" key="CommitChangelistDialog2/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1584172786410" />
+    <state x="230" y="0" key="CommitChangelistDialog2/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1584175887137" />
     <state x="421" y="88" key="FileChooserDialogImpl" timestamp="1584149767059">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
@@ -175,26 +158,26 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="464" y="240" key="Github.ShareDialog/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1583904556069" />
-    <state width="1259" height="156" key="GridCell.Tab.0.bottom" timestamp="1584172692117">
+    <state width="1259" height="156" key="GridCell.Tab.0.bottom" timestamp="1584173082630">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1259" height="156" key="GridCell.Tab.0.bottom/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1584172692117" />
-    <state width="1259" height="156" key="GridCell.Tab.0.center" timestamp="1584172692116">
+    <state width="1259" height="156" key="GridCell.Tab.0.bottom/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1584173082630" />
+    <state width="1259" height="156" key="GridCell.Tab.0.center" timestamp="1584173082629">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1259" height="156" key="GridCell.Tab.0.center/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1584172692116" />
-    <state width="1259" height="156" key="GridCell.Tab.0.left" timestamp="1584172692116">
+    <state width="1259" height="156" key="GridCell.Tab.0.center/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1584173082629" />
+    <state width="1259" height="156" key="GridCell.Tab.0.left" timestamp="1584173082629">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1259" height="156" key="GridCell.Tab.0.left/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1584172692116" />
-    <state width="1259" height="156" key="GridCell.Tab.0.right" timestamp="1584172692117">
+    <state width="1259" height="156" key="GridCell.Tab.0.left/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1584173082629" />
+    <state width="1259" height="156" key="GridCell.Tab.0.right" timestamp="1584173082629">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1259" height="156" key="GridCell.Tab.0.right/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1584172692117" />
-    <state x="233" y="79" key="Vcs.Push.Dialog.v2" timestamp="1584172774701">
+    <state width="1259" height="156" key="GridCell.Tab.0.right/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1584173082629" />
+    <state x="233" y="79" key="Vcs.Push.Dialog.v2" timestamp="1584172827248">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="233" y="79" key="Vcs.Push.Dialog.v2/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1584172774701" />
+    <state x="233" y="79" key="Vcs.Push.Dialog.v2/0.0.1280.689/460.1080.1000.504@0.0.1280.689" timestamp="1584172827248" />
     <state x="450" y="263" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583904698102">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
