@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "88be8a8ffa2d6a086447cbe577845f44",
+    "revision": "17785d274a9cda1a20f8eb22873efb73",
     "url": "/react-redux-pasv-todo-list-app/index.html"
   },
   {
-    "revision": "07aa3d957d90036d9b41",
+    "revision": "85a022f0432c3cf261a4",
     "url": "/react-redux-pasv-todo-list-app/static/css/main.78b49906.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-redux-pasv-todo-list-app/static/js/2.68cb8fbd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "07aa3d957d90036d9b41",
-    "url": "/react-redux-pasv-todo-list-app/static/js/main.f72fef56.chunk.js"
+    "revision": "85a022f0432c3cf261a4",
+    "url": "/react-redux-pasv-todo-list-app/static/js/main.6255c438.chunk.js"
   },
   {
     "revision": "c5811736b9e0e7793047",
