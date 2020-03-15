@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/react-redux-pasv-todo-list-app/static/css/main.b7a4b66f.chunk.css",
-    "main.js": "/react-redux-pasv-todo-list-app/static/js/main.3b49f03f.chunk.js",
-    "main.js.map": "/react-redux-pasv-todo-list-app/static/js/main.3b49f03f.chunk.js.map",
+    "main.css": "/react-redux-pasv-todo-list-app/static/css/main.78b49906.chunk.css",
+    "main.js": "/react-redux-pasv-todo-list-app/static/js/main.eaa91016.chunk.js",
+    "main.js.map": "/react-redux-pasv-todo-list-app/static/js/main.eaa91016.chunk.js.map",
     "runtime-main.js": "/react-redux-pasv-todo-list-app/static/js/runtime-main.a9eb5e4a.js",
     "runtime-main.js.map": "/react-redux-pasv-todo-list-app/static/js/runtime-main.a9eb5e4a.js.map",
-    "static/js/2.8e0869f9.chunk.js": "/react-redux-pasv-todo-list-app/static/js/2.8e0869f9.chunk.js",
-    "static/js/2.8e0869f9.chunk.js.map": "/react-redux-pasv-todo-list-app/static/js/2.8e0869f9.chunk.js.map",
+    "static/js/2.68cb8fbd.chunk.js": "/react-redux-pasv-todo-list-app/static/js/2.68cb8fbd.chunk.js",
+    "static/js/2.68cb8fbd.chunk.js.map": "/react-redux-pasv-todo-list-app/static/js/2.68cb8fbd.chunk.js.map",
     "index.html": "/react-redux-pasv-todo-list-app/index.html",
-    "precache-manifest.3c7b1648d4c8713d7c2dd1c049dba008.js": "/react-redux-pasv-todo-list-app/precache-manifest.3c7b1648d4c8713d7c2dd1c049dba008.js",
+    "precache-manifest.b6ef12ac176d9ca353c3639b563d833d.js": "/react-redux-pasv-todo-list-app/precache-manifest.b6ef12ac176d9ca353c3639b563d833d.js",
     "service-worker.js": "/react-redux-pasv-todo-list-app/service-worker.js",
-    "static/css/main.b7a4b66f.chunk.css.map": "/react-redux-pasv-todo-list-app/static/css/main.b7a4b66f.chunk.css.map",
-    "static/js/2.8e0869f9.chunk.js.LICENSE.txt": "/react-redux-pasv-todo-list-app/static/js/2.8e0869f9.chunk.js.LICENSE.txt"
+    "static/css/main.78b49906.chunk.css.map": "/react-redux-pasv-todo-list-app/static/css/main.78b49906.chunk.css.map",
+    "static/js/2.68cb8fbd.chunk.js.LICENSE.txt": "/react-redux-pasv-todo-list-app/static/js/2.68cb8fbd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a9eb5e4a.js",
-    "static/js/2.8e0869f9.chunk.js",
-    "static/css/main.b7a4b66f.chunk.css",
-    "static/js/main.3b49f03f.chunk.js"
+    "static/js/2.68cb8fbd.chunk.js",
+    "static/css/main.78b49906.chunk.css",
+    "static/js/main.eaa91016.chunk.js"
   ]
 }
