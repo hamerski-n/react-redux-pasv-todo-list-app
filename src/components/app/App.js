@@ -19,19 +19,19 @@ function App() {
                 <div className=''>
                     <ul className='nav flex-row'>
                         <li className='nav-item mr-3'>
-                            <Link to="/">To Do</Link>
+                            <Link to="/react-redux-pasv-todo-list-app">To Do</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to="/important">Important Tasks</Link>
+                            <Link to="/react-redux-pasv-todo-list-app/important">Important Tasks</Link>
                         </li>
                     </ul>
                 </div>
             </nav>
                     <Switch>
-                        <Route path="/important">
+                        <Route path="/react-redux-pasv-todo-list-app/important">
                             <ImportantTasks className='m-5'/>
                         </Route>
-                        <Route path="/">
+                        <Route path="/react-redux-pasv-todo-list-app">
                             <ToDo/>
                         </Route>
                     </Switch>
