@@ -78,6 +78,18 @@ const reducer = (state = initialState, action) => {
                 })]
             };
 
+        case 'TODO_UNDO_EDIT':
+            return {
+                ...state,
+                todoList: [...state.todoList.map(el => {
+                    if (el.todoId === action.payload) {
+                        console.log('HERE');
+                        return {...el, isEdit: !el.isEdit}
+                    } else
+                        return {...el}
+                })]
+            };
+
         case 'TODO_ADD':
             return {
                 ...state,

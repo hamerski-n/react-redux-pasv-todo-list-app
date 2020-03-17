@@ -7,7 +7,7 @@ import {
     todoImportant,
     todoMoveDown,
     todoMoveUp,
-    todoTaskConfirmDelete
+    todoTaskConfirmDelete, todoUndoEdit
 } from "../../redux/actions";
 
 const TodoListItem = (props) => {
@@ -28,6 +28,10 @@ const TodoListItem = (props) => {
     } else {
         important = '';
     }
+    const onUndo=(id)=>{
+        props.undo(id);
+        setNewName(todo.todoName);
+    };
 
     return (
         <div>
@@ -43,7 +47,7 @@ const TodoListItem = (props) => {
                                     onClick={() => props.todoMoveUp(todo.todoId)}>
                                 <i className="fas fa-sort-up"></i>
                             </button>
-                            <button className='btn btn-secondary btn-sm '
+                            <button className='btn btn-secondary btn-sm'
                                     disabled={todo.isDisabledButtonDown}
                                     onClick={() => props.todoMoveDown(todo.todoId)}>
                                 <i className="fas fa-sort-down"></i>
@@ -55,17 +59,22 @@ const TodoListItem = (props) => {
                                                     value={todo.todoName}
                                                     disabled={true}/>}
                             {todo.isEdit && <input type='text'
-                                                   className={`form-control border-0 ${done} ${important}`}
+                                                   className={`form-control edit  ${done} ${important}`}
                                                    value={newName}
                                                    disabled={false}
                                                    onChange={e => setNewName(e.target.value)}
                                                    autoFocus/>}
                         </div>
                         <div className='col-sm-2 d-flex flex-row align-items-center'>
-                            <button className='col-sm-3 btn btn-success mr-1'
+                            {!todo.isEdit && <button className='col-sm-3 btn btn-success mr-1'
                                     onClick={() => props.done(todo.todoId)}>
                                 <i className="far fa-check-square"></i>
-                            </button>
+                            </button>}
+
+                            {todo.isEdit && <button className='col-sm-3 btn btn-outline-info mr-1 '
+                                                    onClick={() => onUndo(todo.todoId)}>
+                                <i className="fas fa-undo"></i>
+                            </button>}
 
                             <button className='col-sm-3 btn btn-info mr-1 '
                                     onClick={() => props.edit({
@@ -75,17 +84,18 @@ const TodoListItem = (props) => {
                                 {!todo.isEdit && <i className="fas fa-edit"></i>}
                                 {todo.isEdit && <i className="far fa-save"></i>}
                             </button>
-                            <button className='col-sm-3 btn btn-danger mr-1'
+
+                            {!todo.isEdit && <button className='col-sm-3 btn btn-danger mr-1'
                                     onClick={() => props.deleteTaskInfo({
                                         id: todo.todoId,
                                         name: todo.todoName
                                     })}>
                                 <i className="far fa-trash-alt"></i>
-                            </button>
-                            <button className='col-sm-3 btn btn-warning'
+                            </button>}
+                            {!todo.isEdit && <button className='col-sm-3 btn btn-warning'
                                     onClick={() => props.important(todo.todoId)}>
                                 <i className="fas fa-exclamation"></i>
-                            </button>
+                            </button>}
                         </div>
                     </div>
                 </div>
@@ -102,6 +112,7 @@ const mapDispatchToProps = {
     done: todoDone,
     important: todoImportant,
     edit: todoEdit,
+    undo: todoUndoEdit,
     deleteTaskInfo: todoTaskConfirmDelete,
     todoMoveUp: todoMoveUp,
     todoMoveDown: todoMoveDown,

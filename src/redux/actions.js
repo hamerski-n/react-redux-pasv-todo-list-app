@@ -31,6 +31,11 @@ export function todoEdit(args) {
     }
 }
 
+export function todoUndoEdit(todoId) {
+    return (dispatch) => {
+        dispatch({type: 'TODO_UNDO_EDIT', payload: todoId})
+    }
+}
 export function todoAdd(name) {
     return (dispatch) => {
         dispatch({type: 'TODO_ADD', payload: name})

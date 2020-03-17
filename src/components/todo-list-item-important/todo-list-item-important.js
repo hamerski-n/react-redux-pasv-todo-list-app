@@ -1,14 +1,7 @@
 import React, {useState} from "react";
 import './todo-list-item-important.css'
 import {connect} from "react-redux";
-import {
-    todoDone,
-    todoEdit,
-    todoImportant,
-    todoMoveDown,
-    todoMoveUp,
-    todoTaskConfirmDelete
-} from "../../redux/actions";
+import { todoDone, todoEdit, todoImportant, todoTaskConfirmDelete, todoUndoEdit } from "../../redux/actions";
 import DeleteConfirmationModal from "../delete-confirmation-modal/delete-confirmation-modal";
 
 const TodoListItemImportant = (props) => {
@@ -29,34 +22,42 @@ const TodoListItemImportant = (props) => {
     } else {
         important = '';
     }
+    const onUndo=(id)=>{
+        props.undo(id);
+        setNewName(todo.todoName);
+    };
 
     return (
         <div>
             <div className="card  m-2">
                 <div className='card-body p-0'>
-                    <div className='d-flex flex-row justify-content align-items-center green'>
+                    <div className='d-flex flex-row justify-content-between align-items-center green'>
                         <div className='col-sm-0.5 p-2 position-left'>
                             <i className={`text-success p-2 position-left far ${check}`}></i>
                         </div>
-                        <div className='col-sm-0.5 btn-group-vertical btn-sm'>
-                        </div>
+
                         <div className='col-sm-9 '>
                             {!todo.isEdit && <input type='text'
                                                     className={`form-control border-0 ${done} ${important}`}
                                                     value={todo.todoName}
                                                     disabled={true}/>}
                             {todo.isEdit && <input type='text'
-                                                   className={`form-control border-0 ${done} ${important}`}
+                                                   className={`form-control edit  ${done} ${important}`}
                                                    value={newName}
                                                    disabled={false}
                                                    onChange={e => setNewName(e.target.value)}
                                                    autoFocus/>}
                         </div>
                         <div className='col-sm-2 d-flex flex-row align-items-center'>
-                            <button className='col-sm-3 btn btn-success mr-1'
-                                    onClick={() => props.done(todo.todoId)}>
+                            {!todo.isEdit && <button className='col-sm-3 btn btn-success mr-1'
+                                                     onClick={() => props.done(todo.todoId)}>
                                 <i className="far fa-check-square"></i>
-                            </button>
+                            </button>}
+
+                            {todo.isEdit && <button className='col-sm-3 btn btn-outline-info mr-1 '
+                                                    onClick={() => onUndo(todo.todoId)}>
+                                <i className="fas fa-undo"></i>
+                            </button>}
 
                             <button className='col-sm-3 btn btn-info mr-1 '
                                     onClick={() => props.edit({
@@ -66,17 +67,18 @@ const TodoListItemImportant = (props) => {
                                 {!todo.isEdit && <i className="fas fa-edit"></i>}
                                 {todo.isEdit && <i className="far fa-save"></i>}
                             </button>
-                            <button className='col-sm-3 btn btn-danger mr-1'
-                                    onClick={() => props.deleteTaskInfo({
-                                        id: todo.todoId,
-                                        name: todo.todoName
-                                    })}>
+
+                            {!todo.isEdit && <button className='col-sm-3 btn btn-danger mr-1'
+                                                     onClick={() => props.deleteTaskInfo({
+                                                         id: todo.todoId,
+                                                         name: todo.todoName
+                                                     })}>
                                 <i className="far fa-trash-alt"></i>
-                            </button>
-                            <button className='col-sm-3 btn btn-warning'
-                                    onClick={() => props.important(todo.todoId)}>
+                            </button>}
+                            {!todo.isEdit && <button className='col-sm-3 btn btn-warning'
+                                                     onClick={() => props.important(todo.todoId)}>
                                 <i className="fas fa-exclamation"></i>
-                            </button>
+                            </button>}
                         </div>
                     </div>
                 </div>
@@ -94,9 +96,8 @@ const mapDispatchToProps = {
     done: todoDone,
     important: todoImportant,
     edit: todoEdit,
-    deleteTaskInfo: todoTaskConfirmDelete,
-    todoMoveUp: todoMoveUp,
-    todoMoveDown: todoMoveDown,
+    undo: todoUndoEdit,
+    deleteTaskInfo: todoTaskConfirmDelete
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(TodoListItemImportant);
