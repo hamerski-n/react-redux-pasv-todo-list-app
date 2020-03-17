@@ -34,7 +34,7 @@ const TodoListItemImportant = (props) => {
         <div>
             <div className="card  m-2">
                 <div className='card-body p-0'>
-                    <div className='d-flex flex-row justify-content-between align-items-center green'>
+                    <div className='d-flex flex-row justify-content align-items-center green'>
                         <div className='col-sm-0.5 p-2 position-left'>
                             <i className={`text-success p-2 position-left far ${check}`}></i>
                         </div>

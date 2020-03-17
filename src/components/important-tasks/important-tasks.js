@@ -1,7 +1,6 @@
 import React from "react";
 import './important-tasks.css';
 import {connect} from "react-redux";
-// import TodoListItem from "../todo-list-item";
 import TodoListItemImportant from "../todo-list-item-important/todo-list-item-important";
 
 const ImportantTasks = (props) => {

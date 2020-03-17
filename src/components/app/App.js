@@ -35,7 +35,6 @@ function App() {
                             <ToDo/>
                         </Route>
                     </Switch>
-
         </Router>
     );
 }
@@ -54,4 +53,3 @@ function ToDo() {
             </div>
         )
 }
-
