@@ -20,3 +20,57 @@
 .edit {
     border: 1px solid #17a2b8;
 }
+
+.check{
+     /*background-color: #259a40;*/
+    border: 2px solid darkseagreen;
+    /*color: white;*/
+ }
+.check:hover {
+    /*background-color: #17a2b8;*/
+    color:  red;
+    border: 2px solid #17a2b8;
+}
+
+.white {
+    /*background-color: red;*/
+    /*border: 2px solid #17a2b8;*/
+    color: darkseagreen;
+    /*background-color: darkorange;*/
+}
+.white:hover {
+    color: darkseagreen;
+}
+
+.success{
+    color: white;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+.success:hover{
+    color: white;
+}
+.outline-success{
+    color: #28a745;
+    background-color: white;
+    border-color: #28a745;
+}
+.outline-success:hover{
+    color: #28a745;
+}
+.warning{
+    color: white;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+.warning:hover{
+    color: white;
+}
+.outline-warning{
+    color: #ffc107;
+    background-color: white;
+    border-color: #ffc107;
+}
+.outline-warning:hover{
+    color: #ffc107;
+}
